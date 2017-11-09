@@ -4,7 +4,6 @@
   "description": "Hacker News Backend Infrastructure",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -21,6 +20,12 @@
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
     "graphql": "^0.11.7",
-    "graphql-tools": "^2.7.2"
+    "graphql-tools": "^2.7.2",
+    "mongodb": "^2.2.33"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
   }
 }
