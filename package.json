@@ -1,0 +1,26 @@
+{
+  "name": "hackernews-backend",
+  "version": "1.0.0",
+  "description": "Hacker News Backend Infrastructure",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3dw1nM0535/hacker-news-backend.git"
+  },
+  "author": "Edwin Moses",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/3dw1nM0535/hacker-news-backend/issues"
+  },
+  "homepage": "https://github.com/3dw1nM0535/hacker-news-backend#readme",
+  "dependencies": {
+    "apollo-server-express": "^1.2.0",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "graphql": "^0.11.7",
+    "graphql-tools": "^2.7.2"
+  }
+}
