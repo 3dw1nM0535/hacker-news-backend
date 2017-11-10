@@ -24,7 +24,8 @@ module.exports = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(functio
           db = _context.sent;
           return _context.abrupt('return', {
             Links: db.collection('links'),
-            Users: db.collection('users')
+            Users: db.collection('users'),
+            Votes: db.collection('votes')
           });
 
         case 4:

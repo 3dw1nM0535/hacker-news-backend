@@ -11,12 +11,14 @@ const resolvers = require('./resolvers');
     url: String!
     description: String!
     postedBy: User
+    votes: [Vote!]!
   }
 
   type User {
     id: ID!
     name: String!
     email: String!
+    votes: [Vote!]!
   }
 
   type Query {
@@ -25,6 +27,8 @@ const resolvers = require('./resolvers');
 
   type Mutation {
     createLink (url: String!, description: String!) : Link 
+
+    createVote(linkId: ID!) : Vote
 
     # Note that this mutation could receive the email and password directly
     # as arguments, with no problem. You're just using this "authProvider"
@@ -40,6 +44,12 @@ const resolvers = require('./resolvers');
   type SigninPayload {
     token: String!
     user: User
+  }
+
+  type Vote {
+    id: ID!
+    user: User!
+    link: Link!
   }
 
   input AuthProviderSignUpData {
