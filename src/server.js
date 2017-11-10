@@ -3,9 +3,9 @@ const bodyParser = require('body-parser');
 const { graphqlExpress, graphiqlExpress } = require('apollo-server-express');
 const schema = require('./schema/schema');
 
-const connectMongo = require('./mongo-connector');
+const connectMongo = require('./mongodb-connector');
 
-const start = async () => {
+export const start = async () => {
 
   const mongo = await connectMongo();
   var app = express();
@@ -22,5 +22,3 @@ const start = async () => {
     console.log(`Hackernews GraphQL server running on port ${PORT}.`)
   });
 };
-
-start();

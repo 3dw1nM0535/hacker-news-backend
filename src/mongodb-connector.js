@@ -1,10 +1,10 @@
 const { MongoClient } = require('mongodb');
 
-//db url
-const MONGO_URI = 'mongodb://localhost:27017/hackernews';
+// 1
+const MONGO_URL = 'mongodb://localhost:27017/hackernews';
 
+// 2
 module.exports = async () => {
-  const db = await MongoClient.connect(MONGO_URI);
-  return {Links: db.collection('links')} ;
+  const db = await MongoClient.connect(MONGO_URL);
+  return { Links: db.collection('links') };
 }
-
