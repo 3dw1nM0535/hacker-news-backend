@@ -22,7 +22,10 @@ module.exports = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(functio
 
         case 2:
           db = _context.sent;
-          return _context.abrupt('return', { Links: db.collection('links') });
+          return _context.abrupt('return', {
+            Links: db.collection('links'),
+            Users: db.collection('users')
+          });
 
         case 4:
         case 'end':
